@@ -53,4 +53,5 @@ services:
       - ./public:/src/public
       - ./resources:/src/resources
       - ./package.json:/src/package.json
+      - ./package-lock.json:/src/package-lock.json
       - ./webpack.mix.js:/src/webpack.mix.js
