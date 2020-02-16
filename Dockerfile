@@ -5,9 +5,11 @@ RUN apt update && apt install -y \
     unzip \
     libsodium-dev \
     libpng-dev \
+    libpq-dev \
+    libicu-dev \
     --no-install-recommends \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-    && docker-php-ext-install pdo pdo_mysql sodium gd
+    && docker-php-ext-install pdo pdo_pgsql sodium gd
 
 WORKDIR /src
 
