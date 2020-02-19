@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'atompark' => [
+        'public_key' => env('ATOMPARK_PUBLIC_KEY'),
+        'private_key' => env('ATOMPARK_PRIVATE_KEY'),
+    ],
+
 ];

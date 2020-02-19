@@ -3,8 +3,8 @@
 
     <div class="col-md-6">
         <input id="{{ $name }}"
-               type="text"
-               class="form-control
+               type="{{ $type ?? 'text' }}"
+               class="form-control {{ $class ?? '' }}
                 @error($name) is-invalid @enderror"
                name="{{ $name }}"
                value="{{ $value ?? old($name) }}"

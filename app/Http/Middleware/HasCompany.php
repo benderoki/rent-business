@@ -9,7 +9,7 @@ class HasCompany
     public function handle($request, Closure $next)
     {
         if($request->user()->company_id == null) {
-            return redirect()->route('business.companies.create');
+            return redirect()->route('web.companies.create');
         }
         return $next($request);
     }
